@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingView" customModule="GithubTrendingProjects" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ana-Oz-yLA"/>
+                <outlet property="forksView" destination="cae-Ce-wQK" id="99e-ce-WOi"/>
+                <outlet property="starsView" destination="o0V-mv-QCj" id="5f6-6g-eY9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VKK-cU-jjq">
+                    <rect key="frame" x="0.0" y="44" width="485" height="125"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-mv-QCj" customClass="RatingItemView" customModule="GithubTrendingProjects" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="242.5" height="125"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cae-Ce-wQK" customClass="RatingItemView" customModule="GithubTrendingProjects" customModuleProvider="target">
+                            <rect key="frame" x="242.5" y="0.0" width="242.5" height="125"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SQ-UK-bID">
+                    <rect key="frame" x="242" y="42.5" width="1" height="128"/>
+                    <color key="backgroundColor" name="Border Color"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Wij-aQ-tjI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VKK-cU-jjq" secondAttribute="trailing" id="0Yj-lf-TxZ"/>
+                <constraint firstItem="2SQ-UK-bID" firstAttribute="centerX" secondItem="VKK-cU-jjq" secondAttribute="centerX" id="Fur-T9-Xum"/>
+                <constraint firstItem="VKK-cU-jjq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Msd-M7-0EG"/>
+                <constraint firstItem="2SQ-UK-bID" firstAttribute="height" secondItem="VKK-cU-jjq" secondAttribute="height" multiplier="1.024" id="T3Z-Gr-ShX"/>
+                <constraint firstItem="VKK-cU-jjq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ULI-Dt-0T0"/>
+                <constraint firstItem="2SQ-UK-bID" firstAttribute="centerY" secondItem="VKK-cU-jjq" secondAttribute="centerY" id="g4N-gA-sYc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VKK-cU-jjq" secondAttribute="bottom" id="zr0-QT-qUz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="189.13043478260872" y="-133.59375"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Border Color">
+            <color red="0.79600000381469727" green="0.82700002193450928" blue="0.84299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
